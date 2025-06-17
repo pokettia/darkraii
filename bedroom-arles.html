@@ -1,21 +1,20 @@
-<!DOCTYPE html><html lang="it">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>La camera di Vincent ad Arles</title>
 <style>
   body { font-family: sans-serif; margin: 0; padding: 0; }
   nav {
-    background-color: #333; position: fixed;
-    width: 100%; top: 0; z-index: 1000;
-    display: flex; justify-content: space-between;
+    background-color: #333; position: fixed; width: 100%;
+    top: 0; z-index: 1000; display: flex; justify-content: space-between;
   }
   nav ul {
-    list-style-type: none; margin: 0; padding: 0;
-    overflow: hidden; display: flex;
+    list-style-type: none; margin: 0; padding: 0; overflow: hidden;
+    display: flex;
   }
   nav li { float: left; }
   nav li a, .dropdown-btn {
-    display: inline-block; color: white;
-    padding: 14px 16px; text-decoration: none;
+    display: inline-block; color: white; padding: 14px 16px;
+    text-decoration: none;
   }
   nav li a:hover, .dropdown:hover .dropdown-btn { background-color: #111; }
   .dropdown-content {
@@ -31,7 +30,7 @@
     margin-top: 80px; padding: 20px; text-align: center;
   }
   img { max-width: 80%; margin: auto; display: block; }
-  .opera-info { margin-top: 20px; font-size: 1rem; }
+  .opera-info { margin-top: 20px; font-size: 1rem; text-align: left; max-width: 800px; margin-left: auto; margin-right: auto; }
 </style>
 </head>
 <body>
@@ -49,16 +48,20 @@
         <a href="self-portrait.html">Autoritratto</a>
       </div>
     </li>
-    <li><a href="metodologia.html">🧠 Metodologia</a></li>
   </ul>
 </nav>
 
-<div class="content">
-  <h1>La camera di Vincent ad Arles</h1>
-  <img src="https://images.skuola.net/uploads/skuola/immagini_appunti/arte/postimpressionismo/camera-van-gogh.jpg" alt="La camera di Vincent ad Arles">
-  <div class="opera-info">
-    <p><strong>Dimensioni:</strong> 72 × 90 cm</p>
-    <p><strong>Descrizione:</strong> Camera semplice dipinta con colori forti.</p>
+  <div class="content">
+    <h1>La camera di Vincent ad Arles</h1>
+    <img src="https://images.skuola.net/uploads/skuola/immagini_appunti/arte/postimpressionismo/camera-van-gogh.jpg" alt="La camera di Vincent ad Arles">
+    <div class="opera-info">
+      <p><strong>Dimensioni:</strong> 72 × 90 cm</p>
+      <p><strong>Descrizione:</strong> Camera semplice dipinta con colori forti.</p>
+      <p><strong>Informazioni presenti nel sito:</strong></p>
+      <ul><li>✔ Titolo</li><li>✔ Immagine</li><li>✔ Descrizione</li><li>✔ Dimensioni</li></ul>
+      <p><strong>Gap (informazioni mancanti):</strong></p>
+      <ul><li>✘ Tecnica</li><li>✘ Data</li><li>✘ Luogo</li></ul>
+      <p><strong>🔍 Cosa fa la query SELECT?</strong><br>La query SELECT recupera solo ciò che è disponibile su Wikidata. Qui manca la tecnica, la data e il museo.</p>
+    </div>
   </div>
-</div>
 </body></html>
