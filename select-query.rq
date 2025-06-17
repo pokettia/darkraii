@@ -2,10 +2,10 @@
 PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
-SELECT ?autore ?materiale ?luogo ?data ?altezza ?larghezza WHERE {
+SELECT ?autore ?materiale ?location ?data ?altezza ?larghezza WHERE {
   wd:Q855 wdt:P170 ?autore .
   OPTIONAL { wd:Q855 wdt:P186 ?materiale. }
-  OPTIONAL { wd:Q855 wdt:P276 ?luogo. }
+  OPTIONAL { wd:Q855 wdt:P276 ?location. }
   OPTIONAL { wd:Q855 wdt:P571 ?data. }
   OPTIONAL { wd:Q855 wdt:P2048 ?altezza. }
   OPTIONAL { wd:Q855 wdt:P2049 ?larghezza. }
