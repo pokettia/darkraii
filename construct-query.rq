@@ -1,0 +1,8 @@
+# CONSTRUCT query
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT {
+  wd:Q855 wdt:P186 wd:Q296955 .
+  wd:Q855 wdt:P276 wd:Q160236 .
+} WHERE { }

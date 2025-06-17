@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Focus Query</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    code { background-color: #f4f4f4; display: block; padding: 10px; margin: 10px 0; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>🔍 Focus sulle Query SPARQL</h1>
+  <p>Questo sito usa due tipi di query SPARQL:</p>
+  <ul>
+    <li><strong>SELECT</strong> → per leggere dati da Wikidata</li>
+    <li><strong>CONSTRUCT</strong> → per costruire dati RDF suggeriti da aggiungere</li>
+  </ul>
+
+  <h2>📄 Query SELECT</h2>
+  <code>
+PREFIX wd: &lt;http://www.wikidata.org/entity/&gt;
+PREFIX wdt: &lt;http://www.wikidata.org/prop/direct/&gt;
+
+SELECT ?autore ?materiale ?luogo ?data ?altezza ?larghezza WHERE {
+  wd:Q855 wdt:P170 ?autore .
+  OPTIONAL { wd:Q855 wdt:P186 ?materiale. }
+  OPTIONAL { wd:Q855 wdt:P276 ?luogo. }
+  OPTIONAL { wd:Q855 wdt:P571 ?data. }
+  OPTIONAL { wd:Q855 wdt:P2048 ?altezza. }
+  OPTIONAL { wd:Q855 wdt:P2049 ?larghezza. }
+}
+  </code>
+
+  <h2>📄 Query CONSTRUCT</h2>
+  <code>
+PREFIX wd: &lt;http://www.wikidata.org/entity/&gt;
+PREFIX wdt: &lt;http://www.wikidata.org/prop/direct/&gt;
+
+CONSTRUCT {
+  wd:Q855 wdt:P186 wd:Q296955 .
+  wd:Q855 wdt:P276 wd:Q160236 .
+} WHERE { }
+  </code>
+
+  <p>
+    👉 <a href="select-query.rq" download>Scarica la query SELECT</a><br>
+    👉 <a href="construct-query.rq" download>Scarica la query CONSTRUCT</a>
+  </p>
+</body>
+</html>

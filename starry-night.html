@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="it">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notte Stellata</title>
+<style>
+  body { font-family: sans-serif; margin: 0; padding: 0; }
+  nav {
+    background-color: #333; position: fixed;
+    width: 100%; top: 0; z-index: 1000;
+    display: flex; justify-content: space-between;
+  }
+  nav ul {
+    list-style-type: none; margin: 0; padding: 0;
+    overflow: hidden; display: flex;
+  }
+  nav li { float: left; }
+  nav li a, .dropdown-btn {
+    display: inline-block; color: white;
+    padding: 14px 16px; text-decoration: none;
+  }
+  nav li a:hover, .dropdown:hover .dropdown-btn { background-color: #111; }
+  .dropdown-content {
+    display: none; position: absolute; background-color: #f9f9f9;
+    min-width: 200px; z-index: 1;
+  }
+  .dropdown-content a {
+    color: black; padding: 12px 16px; text-decoration: none; display: block;
+  }
+  .dropdown-content a:hover { background-color: #f1f1f1; }
+  .dropdown:hover .dropdown-content { display: block; }
+  .content {
+    margin-top: 80px; padding: 20px; text-align: center;
+  }
+  img { max-width: 80%; margin: auto; display: block; }
+  .opera-info { margin-top: 20px; font-size: 1rem; }
+</style>
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-btn">🎨 Opere</a>
+      <div class="dropdown-content">
+        <a href="starry-night.html">Notte Stellata</a>
+        <a href="sunflowers.html">Girasoli</a>
+        <a href="cafe-terrace.html">Terrazza del caffè</a>
+        <a href="bedroom-arles.html">Camera ad Arles</a>
+        <a href="wheatfield-crows.html">Campo di grano</a>
+        <a href="self-portrait.html">Autoritratto</a>
+      </div>
+    </li>
+    <li><a href="metodologia.html">🧠 Metodologia</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <h1>Notte Stellata</h1>
+  <img src="https://images.skuola.net/uploads/skuola/immagini_appunti/arte/postimpressionismo/notte-stellata-van-gogh.jpg" alt="Notte Stellata">
+  <div class="opera-info">
+    <p><strong>Dimensioni:</strong> 73.7 × 92.1 cm</p>
+    <p><strong>Descrizione:</strong> Cielo stellato sopra Saint-Rémy con cipressi e villaggio.</p>
+  </div>
+</div>
+</body></html>

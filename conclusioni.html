@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conclusioni</title>
+<style>
+  body { font-family: sans-serif; margin: 0; padding: 0; }
+  nav {
+    background-color: #333; position: fixed;
+    width: 100%; top: 0; z-index: 1000;
+    display: flex; justify-content: space-between;
+  }
+  nav ul {
+    list-style-type: none; margin: 0; padding: 0;
+    overflow: hidden; display: flex;
+  }
+  nav li { float: left; }
+  nav li a, .dropdown-btn {
+    display: inline-block; color: white;
+    padding: 14px 16px; text-decoration: none;
+  }
+  nav li a:hover, .dropdown:hover .dropdown-btn { background-color: #111; }
+  .dropdown-content {
+    display: none; position: absolute; background-color: #f9f9f9;
+    min-width: 200px; z-index: 1;
+  }
+  .dropdown-content a {
+    color: black; padding: 12px 16px; text-decoration: none; display: block;
+  }
+  .dropdown-content a:hover { background-color: #f1f1f1; }
+  .dropdown:hover .dropdown-content { display: block; }
+  .content {
+    margin-top: 80px; padding: 20px; text-align: center;
+  }
+</style>
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="#">🎨 Opere</a></li>
+    <li><a href="metodologia.html">🧠 Metodologia</a></li>
+    <li><a href="focus-query.html">🔍 Focus Query</a></li>
+    <li><a href="difficolta.html">🧩 Difficoltà</a></li>
+    <li><a href="conclusioni.html">✅ Conclusioni</a></li>
+  </ul>
+</nav>
+
+  <div class="content">
+    <h1>✅ Conclusioni</h1>
+    <p>Il progetto mostra che si può:</p>
+    <ul style="text-align: left; display: inline-block;">
+      <li>Scoprire dati mancanti</li>
+      <li>Proporre miglioramenti</li>
+      <li>Usare Linked Data + LLM</li>
+    </ul>
+    <p>Un esempio concreto di collaborazione tra arte, web semantico e AI.</p>
+  </div>
+</body></html>

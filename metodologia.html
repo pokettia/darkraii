@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="it">
+<head><meta charset="UTF-8"><title>Metodologia</title></head>
+<body>
+  <h1>🧠 Metodologia</h1>
+  <p>Abbiamo creato un sito semplice che mostra alcune opere di Van Gogh. Per ogni opera, mostriamo l’immagine, il titolo, le dimensioni e una breve descrizione.</p>
+  <p>Per raccogliere i dati, usiamo due tipi di query SPARQL:</p>
+
+  <h2>1️⃣ SELECT</h2>
+  <p>Serve per leggere dati da Wikidata. Ad esempio:</p>
+  <pre><code>SELECT ?autore WHERE { wd:Q855 wdt:P170 ?autore }</code></pre>
+  <p>Questa riga dice: “Chi è l’autore dell’opera Notte Stellata?”</p>
+
+  <h2>2️⃣ CONSTRUCT</h2>
+  <p>Serve per proporre dati RDF da aggiungere. Ad esempio:</p>
+  <pre><code>CONSTRUCT { wd:Q855 wdt:P186 wd:Q296955 } WHERE { }</code></pre>
+  <p>Vuol dire: “Aggiungiamo che il materiale è olio su tela”</p>
+</body>
+</html>
